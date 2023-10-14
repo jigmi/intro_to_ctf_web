@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /rce_easy
+Disallow: /rce_medium

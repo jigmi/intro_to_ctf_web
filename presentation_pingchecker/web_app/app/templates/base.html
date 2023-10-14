@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="../static/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pingem</title>
+</head>
+<body>
+    <h1>Pingem</h1>
+    <form id="pingForm" action="#" method="POST" name = "ip_form">
+        <label for="websiteUrl">Enter an ip address to ping</label>
+        <input type="text" id="websiteUrl" name="ip" style="width: 150px;" required>
+        <button type="submit" onclick="return ValidateIPaddress(document.ip_form.ip)">Ping</button>
+    </form>
+    {%block content %}
+
+    {% endblock %}
+    <div id="output">
+        {{result}}
+    </div>
+
+    <script>
+        // JavaScript code remains the same as in the previous example
+    </script>
+</body>
+</html>

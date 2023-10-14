@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="../static/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>echo</title>
+</head>
+<body>
+    <h1>Echo</h1>
+    <form id="pingForm" action="#" method="POST" name = "ip_form">
+        <label for="websiteUrl">please input a number you would like to be echoed</label>
+        <input type="number" id="websiteUrl" name="echo" style="width: 150px;" required>
+        <button type="submit">echo me</button>
+    </form>
+    <div id="output">
+        <br>
+        <img src="../static/echo.jpeg" width="300" height="200">
+        
+        <!-- I love using jinja2 as my templating engine, makes life so much easier! -->
+    </div>    
+</body>
+</html>
